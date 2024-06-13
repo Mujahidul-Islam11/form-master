@@ -1,4 +1,4 @@
-# Handle form with onSubmit
+## Handle form with onSubmit
 - step-1. Create a form tag and create the necessary input tags & submit button
 - step-2. Give a name attribute inside the input tags as attribute, for example:- <input type="email" name="email" />, <input type="password" name="pass" />
 - step-3. Create an event handler, const handleSubmit = e =>{
@@ -7,7 +7,7 @@
 - step-4. Call the function inside the form tag using onSubmit hook, <form onSubmit={()=>handleSubmit()}></form>
 - step-5. stop the default behavior, when we submit the form it will reload the whole page. So, we need to prevent it by using event.preventDefault(). Event parameter holds the whole information of form. So, we can access anything from the form by event parameter.
 
-## Access field data
+## Access field data with event
 - step-6. const handleSubmit = e =>{
         e.preventDefault();
         const form = e.target;
@@ -15,3 +15,23 @@
         console.log(name)
     }
 
+
+## Access field data with useRef Hook
+- const nameRef = useRef();
+
+    const handleSubmit = e =>{
+        e.preventDefault();
+        console.log(nameRef.current.value)
+    }
+
+    return (
+        <div>
+            <form onSubmit={handleSubmit}>
+                <input ref={nameRef} type="text" name="name"/>
+                <br />
+                <input type="email" name="email"/>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    );
