@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 
 
 const ReusableForm = ({title, handleSubmit, submitText="Submit", children}) => {
