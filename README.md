@@ -53,3 +53,6 @@ export default useInputValue
 
 - use it in other components
 const [name, handleNameChange] = useInputValue("Hello world!") // you can use any name you want instead of value & handleChange
+
+## Context API 
+- By context api & useContext hook we can access data in any component that is under the provider of that context. That means, children components of the context api will be able to access it's data by calling it without any props drilling.
