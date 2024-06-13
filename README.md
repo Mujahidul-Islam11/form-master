@@ -35,3 +35,21 @@
             </form>
         </div>
     );
+
+
+## Create a custom hook
+- create custom hook, 
+import { useState } from "react"
+
+const useInputValue = (d=null) =>{
+    const [value, setValue] = useState(d)
+    const handleChange = e =>{
+        setValue(e.target.value);
+    }
+    return [value, handleChange]
+}
+
+export default useInputValue    
+
+- use it in other components
+const [name, handleNameChange] = useInputValue("Hello world!") // you can use any name you want instead of value & handleChange
