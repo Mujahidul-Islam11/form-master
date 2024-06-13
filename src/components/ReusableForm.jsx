@@ -1,9 +1,9 @@
 
 
-const ReusableForm = ({title, handleSubmit, submitText="Submit"}) => {
+const ReusableForm = ({title, handleSubmit, submitText="Submit", children}) => {
     return (
         <div>
-            <h1>{title}</h1>
+            {children}
             <form onSubmit={handleSubmit}>
                 <input type="text" name="name"/>
                 <br />

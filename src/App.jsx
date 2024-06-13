@@ -26,12 +26,20 @@ function App() {
         title={"Sign Up"}
         handleSubmit={handleSingUp}
         submitText="Submit"
-      ></ReusableForm>
+      >
+        <div>
+          <h1>Sign Up please</h1>
+        </div>
+      </ReusableForm>
       <ReusableForm
         title={"Update Profile"}
         handleSubmit={handleUpdateProfile}
         submitText="Update"
-      ></ReusableForm>
+      >
+        <div>
+          <h1>Update your profile</h1>
+        </div>
+      </ReusableForm>
     </>
   );
 }
