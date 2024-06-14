@@ -1,5 +1,6 @@
 import "./App.css";
 import Grandpa from "./components/Grandpa";
+import LayOutComponent from "./components/LayOutComponent";
 // import HookForm from "./components/HookForm";
 // import RefForm from "./components/RefForm";
 // import ReusableForm from "./components/ReusableForm";
@@ -41,7 +42,8 @@ function App() {
           <h1>Update your profile</h1>
         </div>
       </ReusableForm> */}
-      <Grandpa></Grandpa>
+      {/* <Grandpa></Grandpa> */}
+      <LayOutComponent></LayOutComponent>
     </>
   );
 }
