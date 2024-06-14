@@ -1,7 +1,7 @@
 import useSmallDevice from "../hooks/useSmallDevice";
 
 
-const LayOutComponent = () => {
+const LayOutComponentTwo = () => {
     const {onSmallDevice} = useSmallDevice();
     return (
         <div>
@@ -10,4 +10,4 @@ const LayOutComponent = () => {
     );
 };
 
-export default LayOutComponent;
+export default LayOutComponentTwo;
